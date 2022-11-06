@@ -1,12 +1,10 @@
 
-public class gravaBancoDados implements gravaPedido {
+public class gravaBancoDados implements gravaPedido { // É um Observador, está  observando uma ação e quando for chamada
+	// vai executar esta ação.
 
 	@Override
 	public void execAcoes(Pedido pedido) {
-		// TODO Auto-generated method stub
 		System.out.println("Salvando pedido no banco de dados");
 	}
-
-	
 	
 }

@@ -12,19 +12,10 @@ public class Pedido {
 		this.cliente = cliente;
 	}
 	
-//	public double somaTotal(List<Produto> lista) {
-//		double valorTotal = 0;
-//		for (Produto produto : lista) {
-//			valorTotal += produto.getPreco();
-//		}
-//		return valorTotal;
-//	}
-	
 	public double somaTotal(List<Produto> lista) {
 		lista.forEach(p -> valorTotal += p.getPreco());
 		return valorTotal;
 	}
-	
 	
 	
 }
